@@ -1,4 +1,3 @@
-# tasks.py
 from celery import shared_task
 from django.core.mail import send_mail
 
@@ -6,7 +5,7 @@ from django.core.mail import send_mail
 def send_event_creation_email(recipient_list):
     subject = 'A New Event has been created'
     message = 'A new event has been created. Please check it out on the event page.'
-    from_email = 'your-email@example.com'
+    from_email = 'eventm385@gmail.com'
     
     send_mail(
         subject,
@@ -20,7 +19,7 @@ def send_event_creation_email(recipient_list):
 def send_event_updation_email(recipient_list):
     subject = 'An Event has been updated'
     message = 'An event has been updated. Please check it out on the event page.'
-    from_email = 'your-email@example.com'
+    from_email = 'eventm385@gmail.com'
     
     send_mail(
         subject,
